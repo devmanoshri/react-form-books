@@ -1,4 +1,4 @@
-import BookShow from "../components/BookShow";
+import BookShow from "./BookShow";
 function BookList({ books, onEdit, onDelete }) {
   const renderedBook = books.map((book) => {
     return (
@@ -6,6 +6,7 @@ function BookList({ books, onEdit, onDelete }) {
     );
   });
 
+  // console.log(renderedBook);
   return <div className="book-list">{renderedBook}</div>;
 }
 
